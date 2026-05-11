@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://byvv4ici6dpqk"]
+
+[ext_resource type="Script" uid="uid://8xdcdk0y4j06" path="res://Scripts/GameView.gd" id="1_24ps6"]
+
+[node name="HUD" type="CanvasLayer" unique_id=668706655]
+script = ExtResource("1_24ps6")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1922167597]
+offset_left = 86.0
+offset_top = 53.0
+offset_right = 399.0
+offset_bottom = 86.0
+value = 100.0
+
+[node name="Button" type="Button" parent="." unique_id=1629183468]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -120.0
+offset_bottom = 58.0
+grow_horizontal = 0
+text = "Interactuar (Z)"

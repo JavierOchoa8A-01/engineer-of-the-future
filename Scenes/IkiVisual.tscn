@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bpdofbh73hke4"]
+
+[ext_resource type="Texture2D" uid="uid://co2lslygmv6b7" path="res://icon.svg" id="1_uil1w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uil1w"]
+radius = 60.40695
+
+[node name="IkiVisual" type="CharacterBody2D" unique_id=386797638]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=2132223504]
+position = Vector2(546, 309)
+texture = ExtResource("1_uil1w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1155373456]
+position = Vector2(545, 311)
+shape = SubResource("CircleShape2D_uil1w")

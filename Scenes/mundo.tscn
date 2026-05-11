@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dva1fjwn1y8jc"]
+
+[ext_resource type="Script" uid="uid://dlo62n3kd41e1" path="res://Scripts/GameController.gd" id="1_glouy"]
+[ext_resource type="PackedScene" uid="uid://byvv4ici6dpqk" path="res://Scenes/HUD.tscn" id="2_qxsm7"]
+[ext_resource type="Script" uid="uid://fpm8rxbyvr14" path="res://Scripts/JugadorDomain.gd" id="3_yf8a8"]
+[ext_resource type="PackedScene" uid="uid://bpdofbh73hke4" path="res://Scenes/IkiVisual.tscn" id="4_qxsm7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_glouy"]
+radius = 22.36068
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glouy"]
+size = Vector2(1153.5, 156)
+
+[node name="Mundo" type="Node2D" unique_id=72848690]
+script = ExtResource("1_glouy")
+
+[node name="HUD" parent="." unique_id=668706655 instance=ExtResource("2_qxsm7")]
+
+[node name="JugadorDomain" type="Node" parent="." unique_id=1984792495]
+script = ExtResource("3_yf8a8")
+
+[node name="IkiVisual" parent="." unique_id=2027333469 instance=ExtResource("4_qxsm7")]
+
+[node name="Mnemonico" type="Area2D" parent="." unique_id=1250738089]
+position = Vector2(272, 344)
+
+[node name="Sprite2D" type="Sprite2D" parent="Mnemonico" unique_id=723759684]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mnemonico" unique_id=1685851226]
+position = Vector2(-272, -344)
+shape = SubResource("CircleShape2D_glouy")
+
+[node name="Suelo" type="StaticBody2D" parent="." unique_id=1726111980]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo" unique_id=141001684]
+position = Vector2(576.25, 570)
+shape = SubResource("RectangleShape2D_glouy")
+
+[node name="ColorRect" type="ColorRect" parent="Suelo" unique_id=1374330725]
+offset_left = -2.0
+offset_top = 484.0
+offset_right = 1156.0
+offset_bottom = 647.0
+color = Color(0.0044715875, 0.10998685, 0.18765652, 1)
+
+[connection signal="body_entered" from="Mnemonico" to="." method="_on_mnemonico_body_entered"]
