@@ -18,15 +18,15 @@ corner_radius_bottom_left = 4
 script = ExtResource("1_3k1ur")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=760300028]
-offset_right = 1151.0
-offset_bottom = 645.0
+offset_right = 1277.0
+offset_bottom = 718.0
 color = Color(2.9329676e-08, 0.052857056, 0.05298592, 1)
 
 [node name="Label" type="Label" parent="." unique_id=1065316395]
-offset_left = 158.0
-offset_top = 84.0
-offset_right = 982.0
-offset_bottom = 175.0
+offset_left = 268.0
+offset_top = 92.0
+offset_right = 1092.0
+offset_bottom = 183.0
 theme_override_colors/font_color = Color(0.12784174, 0.7835918, 0.77993065, 1)
 theme_override_font_sizes/font_size = 60
 text = "ENGINEER OF THE FUTURE"
@@ -34,10 +34,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=940286809]
-offset_left = 475.0
-offset_top = 229.0
-offset_right = 655.0
-offset_bottom = 431.0
+offset_left = 552.0
+offset_top = 266.0
+offset_right = 732.0
+offset_bottom = 468.0
 alignment = 1
 
 [node name="ButtonJugar" type="Button" parent="VBoxContainer" unique_id=1839646185]

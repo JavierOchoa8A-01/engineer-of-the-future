@@ -6,11 +6,12 @@
 radius = 60.40695
 
 [node name="IkiVisual" type="CharacterBody2D" unique_id=386797638]
+position = Vector2(27, -4)
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=2132223504]
-position = Vector2(546, 309)
+unique_name_in_owner = true
+position = Vector2(1, -2)
 texture = ExtResource("1_uil1w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1155373456]
-position = Vector2(545, 311)
 shape = SubResource("CircleShape2D_uil1w")

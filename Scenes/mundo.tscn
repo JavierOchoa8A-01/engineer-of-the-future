@@ -9,7 +9,7 @@
 radius = 22.36068
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glouy"]
-size = Vector2(1153.5, 156)
+size = Vector2(1275.5, 223)
 
 [node name="Mundo" type="Node2D" unique_id=72848690]
 script = ExtResource("1_glouy")
@@ -20,27 +20,31 @@ script = ExtResource("1_glouy")
 script = ExtResource("3_yf8a8")
 
 [node name="IkiVisual" parent="." unique_id=2027333469 instance=ExtResource("4_qxsm7")]
+position = Vector2(163, 242)
+
+[node name="Camera2D" type="Camera2D" parent="IkiVisual" unique_id=35902122]
+position = Vector2(-2, -162)
 
 [node name="Mnemonico" type="Area2D" parent="." unique_id=1250738089]
-position = Vector2(272, 344)
+position = Vector2(-2, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Mnemonico" unique_id=723759684]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mnemonico" unique_id=1685851226]
-position = Vector2(-272, -344)
+position = Vector2(4, -1)
 shape = SubResource("CircleShape2D_glouy")
 
 [node name="Suelo" type="StaticBody2D" parent="." unique_id=1726111980]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo" unique_id=141001684]
-position = Vector2(576.25, 570)
+position = Vector2(637.25, 603.5)
 shape = SubResource("RectangleShape2D_glouy")
 
 [node name="ColorRect" type="ColorRect" parent="Suelo" unique_id=1374330725]
 offset_left = -2.0
 offset_top = 484.0
-offset_right = 1156.0
-offset_bottom = 647.0
+offset_right = 1277.0
+offset_bottom = 720.0
 color = Color(0.0044715875, 0.10998685, 0.18765652, 1)
 
 [connection signal="body_entered" from="Mnemonico" to="." method="_on_mnemonico_body_entered"]
